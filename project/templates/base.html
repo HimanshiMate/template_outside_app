@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+            color: black;
+        }
+        #nav {
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            /* border-radius: 40px; */
+            /* background-color: rgb(116, 46, 116); */
+            padding: 0px;
+
+
+        }
+        #nav div {
+            margin: 10px;
+            padding: 20px;
+            font-weight: 500;
+            margin-left: 0px;
+        }
+
+        #nav div img {
+            margin-right: 100px;
+            margin-top: -19px;
+            width:120px;
+        }
+
+        #nav div button {
+            width: 160px;
+            height: 40px;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+
+        #but1 {
+            margin-top: -20px;
+            background-color: white;
+            color: rgb(116, 46, 116);
+
+        }
+
+        #but2 {
+            margin-top: -20px;
+            color: white;
+            background-color: rgb(116, 46, 116);
+        }
+
+        #but2 :hover {
+            background-color: rgb(55, 3, 55);
+            color: white;
+        }
+
+
+        /* =================footer=================== */
+
+        #footer {
+            padding-top: 100px;
+            border-radius: 0px 0px 900px 900px;
+            background-color: rgb(116, 46, 116);
+        }
+
+        #footdetail ul {
+            margin: 50px;
+
+        }
+
+        #footdetail div {
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+        }
+
+        #footdetail {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #footdetail ul li {
+            list-style-type: none;
+            padding: 10px;
+
+        }
+
+        #detail {
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+        }
+
+        #detail li {
+            list-style-type: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="nav">
+        <div>
+            <Link to="/"><img src="https://tse3.mm.bing.net/th?id=OIP.VNTO9A4Ya48o-0GRgCPkogHaEK&pid=Api&P=0&h=180"
+                 /></Link>
+        </div>
+        <div>
+            <Link to="/features">Home</Link>
+        </div>
+        <div>
+            <Link to="/solutions">Solutions</Link>
+        </div>
+        <div>
+            <Link to="/enterprice">Enterprice</Link>
+        </div>
+        <div>
+            <Link to="/resources">Resources</Link>
+        </div>
+        <div><button id="but1">TALK TO SALE</button></div>
+        <div><button id="but2">TRY FOR FREE</button></div>
+    </section>
+    {% block content %}
+
+
+    {% endblock %}
+    <section>
+        <center>
+            <section id="footer">
+                <h1 style=color:white>See all that you can accomplish with Slack</h1>
+                <br /><br />
+                <button id="but1">TALK TO SALE</button>
+                <button id="but2" style=border:1px solid white>TRY FOR FREE</button>
+
+            </section>
+            <section id="footdetail">
+                <ul>
+                    <div>WHY SLACK?</div>
+                    <li>Slack vs email</li>
+                    <li>Channels</li>
+                </ul>
+
+                <ul>
+                    <div>PRICING</div>
+                    <li>Subscriptions</li>
+                    <li>Paid vs free</li>
+                </ul>
+                <ul>
+                    <div>COMPANY</div>
+                    <li>About us</li>
+                    <li>Leadership</li>
+                </ul>
+            </section>
+            <ul id="detail">
+                <li>Status</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Your privacy choices</li>
+                <li>Cookies preferences</li>
+                <li>Contact us</li>
+                <li>Change region</li>
+            </ul>
+        </center>
+    </section>
+</body>
+
+</html>
